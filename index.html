@@ -217,6 +217,9 @@ function checkVoucher() {
         document.getElementById("validity").innerHTML = voucherdata.msg ;
 
       }
+	if (voucherdata.message == "You have exceeded the DAILY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/mcandres888-0d-S2XDAipF/api/omadavoucherapi") {
+		document.getElementById("validity").innerHTML  = "Daily quota reached. Please ask your administrator.";		
+	}
 
     }
   });
