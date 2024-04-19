@@ -189,10 +189,11 @@ function checkVoucher() {
 // 2521637
   xhr.addEventListener('readystatechange', function () {
     runtimer("");
+    var voucherdata = JSON.parse(this.responseText);
     if (this.readyState === this.DONE) {
 
       console.log(this.responseText);
-      var voucherdata = JSON.parse(this.responseText);
+      
       console.log(voucherdata);
       sessiontime = (voucherdata.endTime / 1000 ) - ( voucherdata.startTime / 1000 ) / 3600 * 60;
       console.log("sessiontime " + sessiontime);
@@ -216,11 +217,13 @@ function checkVoucher() {
       if (voucherdata.status == "error") {
         document.getElementById("validity").innerHTML = voucherdata.msg ;
 
-      }
-	if (voucherdata.message == "You have exceeded the DAILY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/mcandres888-0d-S2XDAipF/api/omadavoucherapi") {
-		document.getElementById("validity").innerHTML  = "Daily quota reached. Please ask your administrator.";		
-	}
+      } 
 
+    
+    } else {
+      if (voucherdata.message == "You have exceeded the DAILY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/mcandres888-0d-S2XDAipF/api/omadavoucherapi") {
+		    document.getElementById("validity").innerHTML  = "Daily quota reached. Please ask your administrator.";		
+	    }
     }
   });
 
