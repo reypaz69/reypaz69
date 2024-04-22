@@ -10,12 +10,14 @@
 4. once you subscribe to a plan ( you can start with basic first to test the functionality )
 5. go to endpoint , then click the register ( this will register your omada cloud controller with that site )
      - and edit the body schema , site name will be exact name of the site - please make sure of spaces and capital letter are the same
+   ```
      {
       "omadahost": "https://youromadaurlhere.com",
       "omadauser": "yourusername",
       "omadapass": "yourpassword",
       "site": "site name"
     }
+   ```
      - this will return an id ( please take note of this id as we will use this on the site mapping )
      - you can also check your accounts by accessing the accounts endpoint
 6. Clone this repository and rename it to <username>.github.io  - if you want to host this html for free on github
