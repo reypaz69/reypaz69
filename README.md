@@ -20,10 +20,10 @@
    ```
      - this will return an id ( please take note of this id as we will use this on the site mapping )
      - you can also check your accounts by accessing the accounts endpoint
-6. Clone this repository and rename it to <username>.github.io  - if you want to host this html for free on github
+6. Clone this repository and rename it to username.github.io  - if you want to host this html for free on github
 7. edit index.html to your liking. on line 306 , add your apikey ( from rapidapi )
 8. on line 175 edit the site map and add your account id ( the one that was returned from register endpoint ) and give it a name.
-9. you can now test by accessing your url with the sitename on the sitemap  <username>.github.io?site=<sitename>
+9. you can now test by accessing your url with the sitename on the sitemap  username.github.io?site=<sitename>
 10. you can also convert this into qr code and add it to your voucher tickets -> https://qrfy.com
 
 please message me on m.me/arclem888 if you want other features
