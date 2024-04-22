@@ -282,6 +282,7 @@ function checkVoucher() {
       if (voucherdata.valid == false) {
         document.getElementById("validity").innerHTML = "Voucher Expired";
       } else {
+	document.getElementById("validity").innerHTML = "";
         sessiontime = voucherdata.remainingTime;
         runtimer(sessiontime);
       }
