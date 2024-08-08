@@ -1,4 +1,4 @@
-# how to use arclem omada voucher checker
+# how to use omada voucher checker
 
 1. register an account on rapidapi https://rapidapi.com
 2. then on the apihub search for OmadaVoucherAPI or click this link https://rapidapi.com/mcandres888-0d-S2XDAipF/api/omadavoucherapi/
@@ -29,10 +29,9 @@
     }
    ```
 6. Clone this repository and rename it to username.github.io  - if you want to host this html for free on github
-7. edit index.html to your liking. on line 306 , add your apikey ( from rapidapi )
+7. edit index.html to your liking. on line 307 , add your apikey ( from rapidapi )
 8. on line 175 edit the site map and add your account id ( the one that was returned from register endpoint ) and give it a name.
 9. you can now test by accessing your url with the sitename on the sitemap  username.github.io?site=<sitename>
 10. you can also convert this into qr code and add it to your voucher tickets -> https://qrfy.com
 
-please message me on m.me/arclem888 if you want other features
 ENJOY!
